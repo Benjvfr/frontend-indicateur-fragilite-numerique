@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #0d2380;
+    padding: 10px 20px 0 20px;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 80px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header ul li {
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 5px;
+}
