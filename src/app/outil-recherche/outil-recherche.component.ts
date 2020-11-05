@@ -22,6 +22,7 @@ export class OutilRechercheComponent implements OnInit {
     // Affichage par défaut
     this.nomCommune = "La Rochelle";
     this.lancerAnalyse();
+    this.nomCommune = "";
   }
 
   lancerAnalyse() {
@@ -32,6 +33,9 @@ export class OutilRechercheComponent implements OnInit {
             this.hasResults = true;
           },
           (err: HttpErrorResponse) => {
+            alert("Aucune commune trouvée !");
+            this.indicateur = null;
+            this.hasResults = false;
             console.log(err);
           }
       );

@@ -2,7 +2,7 @@
     <div class="rechercher">
         <h2>Découvrez le score de fragilité numérique de votre commune</h2>
         <p>Saisissez ci-dessous le nom de votre commune et découvrez son score de fragilité numérique.</p>
-        <input [(ngModel)]="nomCommune" type="text" placeholder="La Rochelle, Aytré, Corignac..."/>
+        <input [(ngModel)]="nomCommune" type="text" placeholder="La Rochelle, Houx, Lias..."/>
         <button (click)="lancerAnalyse()">Lancer l'analyse</button>
     </div>
 
@@ -13,7 +13,7 @@
 
     <div class="resultat" *ngIf="hasResults">
         <div class="reference">
-            <p class="ref">Point de référence Région ({{ indicateur.nomRegion }}) :</p>
+            <p class="ref">Point de référence Région (Iris n°{{ indicateur.nomRegion }}) :</p>
             <div class="scores">
                 <div class="score-container">
                     <p class="score">{{ indicateur.scoreAccesInformationRegion }}</p>
