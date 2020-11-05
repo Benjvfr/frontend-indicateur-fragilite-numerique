@@ -1,0 +1,34 @@
+h2 {
+    margin-top: 30px;
+    color: #0d3280;
+}
+
+.indicateurs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.indicateurs-container .indicateur {
+    padding: 20px;
+    background: #0d3280;
+    color: white;
+    margin: 4px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.indicateurs-container .indicateur img {
+    width: 60px;
+}
+
+p.bold {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+p.analyse {
+    margin-top: 0;
+}

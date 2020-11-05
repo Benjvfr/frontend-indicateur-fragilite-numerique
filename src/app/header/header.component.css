@@ -8,7 +8,7 @@ header {
 }
 
 header .logo img {
-    max-height: 62px;
+    max-height: 95px;
 }
 
 header ul {
@@ -22,13 +22,13 @@ header ul li {
     list-style: none;
     padding-left: 10px;
     padding-right: 5px;
-    color: #194F6E;
+    color: #0d3280;
     text-transform: uppercase;
     cursor: pointer;
 }
 
 header ul li.bleu {
-    background: #194F6E;
+    background: #0d3280;
     color: white;
     padding: 10px;
     margin-left: 10px;
