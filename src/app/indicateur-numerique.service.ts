@@ -19,7 +19,7 @@ export class IndicateurNumeriqueService {
     return new Observable<IndicateurNumerique|HttpErrorResponse>(observer => {
       this.http.get(this.endpoint + "/commune?nom=" + commune).subscribe(
         (data: IndicateurNumerique) => observer.next(data),
-        (err: HttpErrorResponse) => observer.next(err)
+        (err: HttpErrorResponse) => observer.error(err)
       );
     });
   }
