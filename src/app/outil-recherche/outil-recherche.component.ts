@@ -1,3 +1,4 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { IndicateurNumeriqueService } from '../indicateur-numerique.service';
 import { IndicateurNumerique } from '../model/indicateur-numerique';
@@ -25,10 +26,15 @@ export class OutilRechercheComponent implements OnInit {
 
   lancerAnalyse() {
     if(this.nomCommune.length > 0) {
-      this.indicateurService.getIndicateur(this.nomCommune).subscribe((indicateur: IndicateurNumerique) => {
-        this.indicateur = indicateur;
-        this.hasResults = true;
-      });
+      this.indicateurService.getIndicateur(this.nomCommune).subscribe(
+          (indicateur: IndicateurNumerique) => {
+            this.indicateur = indicateur;
+            this.hasResults = true;
+          },
+          (err: HttpErrorResponse) => {
+            console.log("erreur:", err);
+          }
+      );
     }
   }
 
