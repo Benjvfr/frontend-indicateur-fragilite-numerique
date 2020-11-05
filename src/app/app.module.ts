@@ -8,6 +8,8 @@ import { DimensionsIndicateurComponent } from './dimensions-indicateur/dimension
 import { FooterComponent } from './footer/footer.component';
 import { RessourcesComponent } from './ressources/ressources.component';
 import { OutilRechercheComponent } from './outil-recherche/outil-recherche.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { OutilRechercheComponent } from './outil-recherche/outil-recherche.compo
     OutilRechercheComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

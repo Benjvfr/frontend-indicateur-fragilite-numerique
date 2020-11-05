@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IndicateurNumeriqueService } from '../indicateur-numerique.service';
+import { IndicateurNumerique } from '../model/indicateur-numerique';
 
 @Component({
   selector: 'app-outil-recherche',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OutilRechercheComponent implements OnInit {
 
-  constructor() { }
+  nomCommune: string;
+  hasResults: boolean = false;
+  indicateur: IndicateurNumerique;
+
+  constructor(
+    private indicateurService: IndicateurNumeriqueService
+  ) {}
 
   ngOnInit(): void {
+    // Affichage par défaut
+    this.nomCommune = "La Rochelle";
+    this.lancerAnalyse();
+  }
+
+  lancerAnalyse() {
+    if(this.nomCommune.length > 0) {
+      this.indicateurService.getIndicateur(this.nomCommune).subscribe((indicateur: IndicateurNumerique) => {
+        this.indicateur = indicateur;
+        this.hasResults = true;
+      });
+    }
   }
 
 }

@@ -2,32 +2,33 @@
     <div class="rechercher">
         <h2>Découvrez le score de fragilité numérique de votre commune</h2>
         <p>Saisissez ci-dessous le nom de votre commune et découvrez son score de fragilité numérique.</p>
-        <input type="text" placeholder="La Rochelle, Aytré, Corignac..."/>
-        <button>Lancer l'analyse</button>
+        <input [(ngModel)]="nomCommune" type="text" placeholder="La Rochelle, Aytré, Corignac..."/>
+        <button (click)="lancerAnalyse()">Lancer l'analyse</button>
     </div>
-    <!--
-    <div class="resultat-vide">
+
+    <div class="resultat-vide" *ngIf="!hasResults">
         <img src="assets/search.png" class="search-icon"/>
         <p>Le résultat s'affichera ici !</p>
-    </div>!-->
-    <div class="resultat">
+    </div>
+
+    <div class="resultat" *ngIf="hasResults">
         <div class="reference">
-            <p class="ref">Point de référence Région :</p>
+            <p class="ref">Point de référence Région ({{ indicateur.nomRegion }}) :</p>
             <div class="scores">
                 <div class="score-container">
-                    <p class="score">100</p>
+                    <p class="score">{{ indicateur.scoreAccesInformationRegion }}</p>
                     <p class="dimension">Accès à l'information</p>
                 </div>
                 <div class="score-container">
-                    <p class="score">100</p>
+                    <p class="score">{{ indicateur.scoreAccesInterfaceNumeriqueRegion }}</p>
                     <p class="dimension">Accès aux interfaces numériques</p>
                 </div>
                 <div class="score-container">
-                    <p class="score">100</p>
+                    <p class="score">{{ indicateur.scoreCapaciteNumeriqueRegion }}</p>
                     <p class="dimension">Capacité d'usage des interfaces numériques</p>
                 </div>
                 <div class="score-container">
-                    <p class="score">100</p>
+                    <p class="score">{{ indicateur.scoreCompetencesAdministrativesRegion }}</p>
                     <p class="dimension">Compétences administratives</p>
                 </div>
             </div>
@@ -36,19 +37,19 @@
             <p class="ref">Point de référence Département :</p>
             <div class="scores">
                 <div class="score-container">
-                    <p class="score">100</p>
+                    <p class="score">{{ indicateur.scoreAccesInformationDepartement }}</p>
                     <p class="dimension">Accès à l'information</p>
                 </div>
                 <div class="score-container">
-                    <p class="score">100</p>
+                    <p class="score">{{ indicateur.scoreAccesInterfaceNumeriqueDepartement }}</p>
                     <p class="dimension">Accès aux interfaces numériques</p>
                 </div>
                 <div class="score-container">
-                    <p class="score">100</p>
+                    <p class="score">{{ indicateur.scoreCapaciteNumeriqueDepartement }}</p>
                     <p class="dimension">Capacité d'usage des interfaces numériques</p>
                 </div>
                 <div class="score-container">
-                    <p class="score">100</p>
+                    <p class="score">{{ indicateur.scoreCompetencesAdministrativesDepartement }}</p>
                     <p class="dimension">Compétences administratives</p>
                 </div>
             </div>
