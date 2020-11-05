@@ -32,7 +32,7 @@ export class OutilRechercheComponent implements OnInit {
             this.hasResults = true;
           },
           (err: HttpErrorResponse) => {
-            console.log("erreur:", err);
+            console.log(err);
           }
       );
     }
