@@ -1,0 +1,117 @@
+.outil-recherche-container {
+    border-radius: 24px;
+    box-shadow: 0 2px 27px 7px rgba(145, 144, 146, 0.11);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    margin: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 45px;
+}
+
+.outil-recherche-container h2 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.outil-recherche-container .rechercher {
+    max-width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outil-recherche-container .rechercher input {
+    margin-top: 15px;
+    box-shadow: 0 2px 27px 7px rgba(87, 88, 89, 0.09);
+    outline: none;
+    border-radius: 22px;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    width: 350px;
+}
+
+.outil-recherche-container .rechercher button {
+    padding: 12px;
+    color: white;
+    background: #0d3280;
+    border-radius: 22px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    width: 220px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.outil-recherche-container .resultat-vide {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outil-recherche-container .resultat-vide .search-icon {
+    width: 230px;
+}
+
+.outil-recherche-container .resultat-vide p {
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.outil-recherche-container .resultat {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.outil-recherche-container .resultat .reference {
+    display: flex;
+    flex-direction: column;
+}
+
+.outil-recherche-container .resultat .reference .ref {
+    font-weight: 600;
+}
+
+.outil-recherche-container .resultat .reference .scores {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    box-shadow: 0 2px 27px 7px rgba(145, 144, 146, 0.11);
+    padding-bottom: 0;
+    border-radius: 10px;
+}
+
+.outil-recherche-container .resultat .reference .scores .score-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    display: flex;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.outil-recherche-container .resultat .reference .scores .score-container p {
+    margin: 0;
+}
+
+.outil-recherche-container .resultat .reference .scores .score-container p.score {
+    font-weight: 700;
+    font-size: 50px;
+    color: #0d3280;
+    margin-bottom: 20px;
+}
+
+.outil-recherche-container .resultat .reference .scores .score-container p.dimension {
+    font-size: 12px;
+    line-height: 20px;
+}
