@@ -1,24 +1,40 @@
 header {
     display: flex;
     flex-direction: row;
-    border-bottom: 2px solid #0d2380;
-    padding: 10px 20px 0 20px;
+    padding: 20px 0 0 0;
     height: 80px;
     align-items: center;
     justify-content: space-between;
 }
 
 header .logo img {
-    height: 80px;
+    max-height: 62px;
 }
 
 header ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    font-weight: 600;
 }
 
 header ul li {
     list-style: none;
     padding-left: 10px;
     padding-right: 5px;
+    color: #194F6E;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+header ul li.bleu {
+    background: #194F6E;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
