@@ -31,19 +31,32 @@
     font-size: 18px;
     padding: 10px;
     width: 350px;
+    transition: all 0.2s;
+}
+
+.outil-recherche-container .rechercher input:focus {
+    box-shadow: 0 2px 27px 7px rgba(87, 88, 89, 0.21);
+    transition: all 0.2s;
 }
 
 .outil-recherche-container .rechercher button {
     padding: 12px;
     color: white;
     background: #0d3280;
-    border-radius: 22px;
+    border: 2px solid;
+    border-radius: 30px;
     outline: none;
-    border: none;
     font-size: 16px;
     width: 220px;
     cursor: pointer;
     margin-top: 30px;
+    transition: all 0.2s;
+}
+
+.outil-recherche-container .rechercher button:hover {
+    background: transparent;
+    color: #0d3280;
+    transition: all 0.2s;
 }
 
 .outil-recherche-container .resultat-vide {
