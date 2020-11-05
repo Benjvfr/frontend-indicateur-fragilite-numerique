@@ -1,0 +1,12 @@
+a {
+    text-decoration: underline;
+}
+
+ul {
+    line-height: 30px;
+    margin-top: 0;
+}
+
+p.source {
+    margin-bottom: 5px;
+}

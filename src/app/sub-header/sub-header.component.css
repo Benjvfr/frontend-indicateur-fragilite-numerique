@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     position: relative;
-    background: url(http://localhost:4200/assets/numerique.jpg);
+    background: url("/assets/numerique.jpg");
     background-size: cover;
     height: 350px;
     margin-top: 10px;

@@ -1,8 +1,3 @@
-h2 {
-    margin-top: 30px;
-    color: #0d3280;
-}
-
 .indicateurs-container {
     display: flex;
     flex-direction: row;
@@ -11,7 +6,7 @@ h2 {
 
 .indicateurs-container .indicateur {
     padding: 20px;
-    background: #0d3280;
+    background: rgba(13, 50, 128, 0.94);
     color: white;
     margin: 4px;
     padding-bottom: 5px;
@@ -24,6 +19,14 @@ h2 {
     width: 60px;
 }
 
+.indicateurs-container .indicateur:first-child {
+    margin-left: 0;
+}
+
+.indicateurs-container .indicateur:last-child {
+    margin-right: 0;
+}
+
 p.bold {
     font-weight: bold;
     margin-bottom: 5px;
@@ -31,4 +34,5 @@ p.bold {
 
 p.analyse {
     margin-top: 0;
+    margin-bottom: 0;
 }

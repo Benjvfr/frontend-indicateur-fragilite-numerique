@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { SubHeaderComponent } from './sub-header/sub-header.component';
 import { DimensionsIndicateurComponent } from './dimensions-indicateur/dimensions-indicateur.component';
 import { FooterComponent } from './footer/footer.component';
+import { RessourcesComponent } from './ressources/ressources.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     SubHeaderComponent,
     DimensionsIndicateurComponent,
-    FooterComponent
+    FooterComponent,
+    RessourcesComponent
   ],
   imports: [
     BrowserModule
